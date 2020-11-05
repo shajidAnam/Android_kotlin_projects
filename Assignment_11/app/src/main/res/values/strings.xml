@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment_11</string>
+    <string name="website">Website:</string>
+    <string name="course_fee">Course fee:</string>
+    <string name="no_of_class">No of class:</string>
+    <string name="course_duration">Course Duration:</string>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_layout"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"
+        tools:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_layout"
+        app:cardElevation="8dp"
+        android:layout_margin="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_home_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_foreground"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_home_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            tools:text="android ninja"
+            />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_duration_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/tv_course_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_course_title"
+                android:textStyle="bold"
+                android:text="@string/course_duration"
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_duration_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/tv_course_duration_lebel"
+                app:layout_constraintTop_toTopOf="@+id/tv_course_duration_lebel"
+                android:textStyle="bold"
+                tools:text="3 month"
+                android:layout_marginStart="5dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_no_of_class_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/tv_course_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_course_duration_lebel"
+                android:textStyle="bold"
+                android:text="@string/no_of_class"
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_no_of_class_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/tv_no_of_class_lebel"
+                app:layout_constraintTop_toTopOf="@+id/tv_no_of_class_lebel"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                tools:text="24"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_fee_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/tv_course_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_no_of_class_lebel"
+                android:textStyle="bold"
+                android:text="@string/course_fee"
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_course_fee_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/tv_course_fee_lebel"
+                app:layout_constraintTop_toTopOf="@+id/tv_course_fee_lebel"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                tools:text="15000 taka"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/tv_course_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_course_fee_lebel"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_weburl_lebel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/tv_course_title"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview"
+                android:textStyle="bold"
+                android:text="@string/website"
+                android:layout_marginTop="8dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_weburl_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/tv_weburl_lebel"
+                app:layout_constraintTop_toTopOf="@+id/tv_weburl_lebel"
+                android:layout_marginStart="5dp"
+                android:clickable="true"
+                android:textColorLink="#2494ED"
+                tools:text="www.hellohasan.com" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
