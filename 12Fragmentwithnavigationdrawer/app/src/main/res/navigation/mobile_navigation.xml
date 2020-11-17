@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_profile">
+
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_profile"
+        android:name="com.example.a12fragmentwithnavigationdrawer.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_skill"
         android:name="com.example.a12fragmentwithnavigationdrawer.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:label="@string/skills"
+        tools:layout="@layout/fragment_skill" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_academicQualification"
         android:name="com.example.a12fragmentwithnavigationdrawer.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:label="@string/academic_qualification"
+        tools:layout="@layout/fragment_academic_qualification" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_contactInfo"
         android:name="com.example.a12fragmentwithnavigationdrawer.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/contact_info"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
