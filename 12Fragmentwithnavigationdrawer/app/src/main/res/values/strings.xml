@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">12.Fragment with navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">MD.Anamul Shajid</string>
+    <string name="nav_header_subtitle">Android developer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="skills">Skills</string>
+    <string name="academic_qualification">Academic qualification</string>
+    <string name="contact_info">Contact information</string>
+    <string name="profile">profile</string>
+</resources>

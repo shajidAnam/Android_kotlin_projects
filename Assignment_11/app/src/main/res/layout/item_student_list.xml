@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="14dp"
+    android:layout_margin="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/iv_studentImage"
+           android:layout_width="150dp"
+           android:layout_height="150dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:src="@drawable/ic_launcher_foreground"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_StudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/iv_studentImage"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/iv_studentImage"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            tools:text="ibrahim khalil"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_studentEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_StudentName"
+            app:layout_constraintTop_toBottomOf="@id/tv_StudentName"
+            app:layout_constraintBottom_toTopOf="@id/tv_studentInstitute"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            tools:text="ibrahimkhalil@gmail.com"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_studentInstitute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tv_studentEmail"
+            app:layout_constraintTop_toBottomOf="@id/tv_studentEmail"
+            android:drawableStart="@drawable/ic_baseline_business_24"
+            app:layout_constraintBottom_toBottomOf="@id/iv_studentImage"
+            tools:text="Dhaka city college"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

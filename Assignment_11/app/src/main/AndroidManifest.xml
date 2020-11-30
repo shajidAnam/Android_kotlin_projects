@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment_11"
         android:usesCleartextTraffic="true">
-        <activity android:name=".WebUrlActivity"></activity>
-        <activity android:name=".view.home.HomeActivity">
+        <activity android:name=".feature.student.view.Student_details_activity"></activity>
+        <activity android:name=".feature.student.view.StudentListActivity" />
+        <activity android:name=".feature.login.view.LoginActivity" />
+        <activity android:name=".feature.web_view.WebUrlActivity" />
+        <activity android:name=".feature.home.view.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
