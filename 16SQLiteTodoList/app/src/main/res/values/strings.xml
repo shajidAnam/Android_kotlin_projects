@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">16.SQLite TodoList</string>
+    <string name="edit_button_description">Edit Button Description</string>
+    <string name="cross_image_content_descriptioon">Cross image content descriptioon</string>
+    <string name="registration_no">Registration no</string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
+    <string name="priority_number">priority number</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+</resources>
